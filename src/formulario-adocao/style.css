@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Jockey+One&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Jockey+One&family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
@@ -38,7 +41,7 @@ a{
 main{
     width: Fixed 1437px;
     height: Fill 3106px;
-    padding: 135px 67px 102px 67px;
+    padding: 15px 67px 200px 67px;
     gap: 30px;
     opacity: 0px;
        
@@ -56,7 +59,7 @@ h1{
 
     width: Fixed (1,437px);
     height: Fill (3,106px);
-    padding: 135px 67px 102px 67px;
+    padding: 100px 67px 42px 67px;
     gap: 30px;
     opacity: 0px;
 
@@ -67,14 +70,14 @@ h1{
     background: #EFEFEF;
 
     width: 1400px;
-    height: 3100px;
+
     margin: auto;
-    padding: 58px 50px 1px 50px;
+    padding: 58px 50px 40px 50px;
     gap: 30px;
     opacity: 0px;
 
 }
-p{
+#main-container>p{
     color: #1E1E1E;
     font-family: Arial;
     font-size: 25px;
@@ -183,6 +186,7 @@ input{
 
 .info-tutor{
     margin-bottom: 25px;
+    margin-top: 25px;
 }
 .contato{
     margin-bottom: 25px;
@@ -203,6 +207,79 @@ input{
     position: relative;
     
 }
+.button-reg{
+    display: flex;
+    justify-content: center;
+    
+}
+#btn-reg{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+   gap: 20px;
+    background-color: white;
+    color: #27A8AD;
+    border: 2px solid #27A8AD;
+    border-radius: 10px;
+    width: 256px;
+    height: 56px;
+    cursor: pointer;
+
+    font-family: "Kantumruy Pro";
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 36.13px;
+    letter-spacing: 0%;
+
+
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
+.button-cad{
+    display: flex;
+    justify-content: right;
+    
+}
+#btn-cad{
+    
+    background-color: #27A8AD;
+    color:white ;
+
+    width: 206px;
+    height: 52.168678283691406px;
+    padding-top: 14.99px;
+    padding-right: 43.74px;
+    padding-bottom: 11.99px;
+    padding-left: 43.74px;
+    gap: 7.05px;
+    border-radius: 3.79px;
+    border: none;
+
+    
+    margin-top: 70px;
+    cursor: pointer;
+
+    font-family: Arial;
+    font-weight: 700;
+    font-size: 17.64px;
+    line-height: 20.28px;
+    letter-spacing: 0%;
+    text-align: center;
+    
+
+
+    display: flex;
+    justify-content: center;
+    
+
+    
+}
+
 #big-cat{
     height: 300px;
     padding-bottom: 0px;
@@ -212,7 +289,7 @@ input{
     justify-content: center;
    
  }
-#big-gato{
+ #big-gato{
     width: 264.08px;
     height: 291px;
     gap: 0px;
@@ -221,7 +298,8 @@ input{
     bottom: -50px;
  
  }
-footer{
+ 
+ footer{
      display: grid;
      grid-template-areas:
      "inf inf inf inf"
@@ -232,31 +310,40 @@ footer{
     
      background-color: #27A8AD;
  }
-.inf{
+ .inf{
      text-align: center;
      margin-top: 100px;
      display: grid;
      
    }
-h3{
+  h3{
      font-weight: bolder;
      
   }
-.footer-item{
+ .footer-item{
      color: black;
      padding: 5px;
   }
-#rodape{
+ 
+ #rodape{
      grid-area: rodape;
      text-align: center;
    }
-.social-icons{
+ .social-icons{
      display: flex;
     justify-content: center;
  
      height: 100px;
-           
+    
+        
  }
-.item-social{
+ .item-social{
      margin-left: 20px;
+ }
+  
+ @media(max-width:1000px){
+     .galery{
+         display: grid;
+         grid-template-columns: repeat(3, minmax(300px,1fr))
+     }
  }
